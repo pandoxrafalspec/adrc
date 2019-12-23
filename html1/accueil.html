@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Infosec</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="accueil.css">
+		<link rel="icon" href="image/fav1.ico">
+	</head>
+
+	
+	<body>
+		<header>
+			<div class="header">
+				<div class="innerhead">
+					<div class="container">
+						<h1>Antonio<span>Tuto</span></h1>
+						<div class="box">
+							  <div class="top"></div>
+							  <div class="bottom"></div>
+							  <div class="left"></div>
+							  <div class="right"></div>
+							</div>
+					</div>
+						<ul class="navigation">
+							<li id="encours"><a href="accueil.html">Stegano</a></li>
+							<li><a href="crypto.html">Cryptologie</a></li>
+							<li><a href="pentest.html">Contacts</a></li>
+						<ul>
+				</div>
+			</div>
+		</header>
+				
+			
+			<a href="https://github.com/pandoxrafalspec"><img class="baspage" src="image/githuba.png"></a>
+			<a href="https://twitter.com/Pandoxrafal"><img class="basdepage" src="image/twitter.png"></a>
+			<a href="https://www.instagram.com/antoine_romet/"><img class="bas" src="image/instagram.png"></a>		
+				<h1 id="t1">La Stégano, tout un art !</h1>
+				
+				<img id="point" src="image/face.png" alt="Photo">
+
+				<p>La stéganographie est l'art de la communication secrète. Son objectif est de dissimuler un message dans un autre média (image, sons, texte ...), afin qu'il ne puisse pas être detecté tant visuellement que statistiquement. La stéganographie dite pure est l'ensemble des méthodes servant à cacher le message dans le contenu, comme par exemple caché un message dans un texte (acrostiche).
+				</p>	
+					
+				<h2>Un peu d'histoire ...</h2>
+
+				<p class="histoire">La stéganographie existe sous plusieurs forme. Par exemple dans la première lettre envoyée à Alfred de Musset par Georges Sand, la stéganographie est utilisé. Puis, l'informatique  à permi d'améliorer et d'évoluer cette technique car aujourd'hui, nous pouvons cacher facilement et rapidement toutes sortes de données (dans les vidéos, images numériques, sons etc...). </br>"Apparently neutral’s protest is thoroughly discounted and ignored. Isman hard it. Blockade issue affects pretext for embargo on byproducts, ejecting suets and vegetable oils." </br></br>Voici un exemple dans lequel on ne prendra que la deuxième lettre de chaque mot. Ce qui nous donne : Pershing sails from NY June 1.</p>
+
+				
+
+				<h2>Maintenant, la pratique !</h2>
+				
+				<p class="histoire">Nous allons apprendre comment savoir si un texte est incrusté dans une image avec l'outils steghide (linux/windows). Sur l'image ci-dessous avec la commande : "steghide info 'nom_image'". Ansi, si des informations sont cachées et protégées par une passphrase, le terminal vous la demandra. Si vous rentrez une mauvaise passphrase vous ne pourrez pas savoir ce qui est caché. (Systeme du mot de passe) En revanche, si vous voulez cracker une passphrase avec la méthode bruteforce, il vous suffira d'installer stegcracker et d'utiliser une wordlist. Il faudra évidemment que le mot de passe soit dans la wordlist !</p>
+				
+				<a href="image/stegano.jpg"><img class="display" src="image/stegano.jpg" alt="Photo" title="Cliquez pour agrandir"></a>
+			
+				<img class="display" src="image/steg.gif" alt="Gif">
+
+				<p class="warning"><strong>Attention !</strong> Cette méthode ne fonctionne que pour des images au format .jpg</p>
+
+				<p class="conseil">Les autres formats peuvent être analysé par d'autres outils qui eux-même, maîtrisent différentes techniques de stégano.</p>
+				
+				<h2>À votre tour ...</h2>
+				
+				<p class="histoire">Pour que vous puissiez vous perfectionner, téléchargé l'image ci-dessous pour tentez votre chance de trouvez ce qu'elle cache !</p>
+			
+				<img class="display" src="image/test.jpg" alt="Photo">
+				
+				<h2>Et comment cacher un fichier ?</h2>
+				<p class="histoire">C'est très simple ! En effet, il suffit d'avoir une image et un fichier .txt (par exemple) dans un même dossier. Ensuite vous saisissez "steghide embed -cf image.jpg -ef fichier.txt". Le teminal vous demandera alors une nouvelle passphrase et le tour est joué !</p>
+	</body>
+
+		<div id="footer">
+				<p>Copyright - All rights Reserved</p>
+				
+		</div>
+</html>
